@@ -32,10 +32,10 @@ pipeline {
         }
 
 	stage('print') {
-		steps {
 		agent {
 	    		label 'linux'
    		 }
+		steps {
 			sh "echo testing"
 		}
 	}
